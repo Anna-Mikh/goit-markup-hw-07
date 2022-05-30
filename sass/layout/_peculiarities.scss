@@ -1,0 +1,43 @@
+
+
+
+
+.text {
+    color: var(--primery-text-color)
+}
+
+.peculiarities {
+    display: flex;
+    margin: -15px;
+}
+
+.peculiarities__item {
+    width: 270px;
+    margin: 15px;
+}
+
+.peculiarities__vector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.peculiarities__title {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.peculiarities__text {
+    color: var(--primery-text-color)
+}
