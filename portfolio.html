@@ -1,247 +1,340 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<body>
-<!-- header -->
-<header class="header">
-    <div class="container">
-        <div class="header-container">
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header__container">
         <nav class="nav">
-            <a href="" class="logo">Web<span class="logo-half">Studio</span></a>
-            <ul class="nav__title">
-                <li class="nav__item item"><a class="link" href="index.html">Студия</a></li>
-                <li class="nav__item item"><a class="link current" href="">Портфолио</a></li>
-                <li class="nav__item item"><a class="link" href="">Контакты</a></li>
-            </ul>
+          <a href="" class="logo logo__header"
+            >Web<span class="logo__dark">Studio</span></a
+          >
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
         </nav>
-            <ul class="nav-secondary">
-                <li class="nav-secondary__item item"><a class="link-contact" href="mailto:info@devstudio.com">
-                        <svg class="icon-contact-mail" width="16px" height="12px">
-                            <use href="./images/symbol-defs.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="nav-secondary__item item"><a class="link-contact" href="tel:+380961111111">
-                        <svg class="icon-contact-tel" width="10px" height="16px">
-                            <use href="./images/symbol-defs.svg#tel"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <!--Main-->
-<main class="main-portfolio" >
-    <section class="section">
+    <main class="main-portfolio">
+      <section class="section">
         <div class="container">
-        <ul class="button-list" >
-            <li class="item"><button class="portfolio-button" type="button">Все</button></li>
-            <li class="item"><button class="portfolio-button" type="button">Веб-сайты</button></li>
-            <li class="item"><button class="portfolio-button" type="button">Приложения</button></li>
-            <li class="item"><button class="portfolio-button" type="button">Дизайн</button></li>
-            <li class="item"><button class="portfolio-button" type="button">Маркетинг</button></li>
-        </ul>
+          <ul class="button-list">
+            <li class="item">
+              <button class="portfolio-button" type="button">Все</button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button" type="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button" type="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button" type="button">Маркетинг</button>
+            </li>
+          </ul>
 
-        <!--Скрытый заголовок-->
-        <h1 class="visually-hidden">Примеры работ</h1>
-        <ul class="work-examples">
-        <li class="item">
-            <a class="effects" href="">
+          <!--Скрытый заголовок-->
+          <h1 class="visually-hidden">Примеры работ</h1>
+          <ul class="work-examples">
+            <li class="work-examples__item">
+              <a class="work-examples__effects" href="">
                 <div class="depart">
-                    <img src="images/portfolio1.jpg" alt="примеры работ">
-                    <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-            исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-            <div class="border">
-                <h2 class="text-title-portfolio">Технокряк</h2>
-                <p class="text-portfolio">Веб-сайт</p>
-            </div>
-            </a></li>
-        <li class="item">
-            <a class="effects" href="">
-                <div class="depart">
-                    <img src="images/portfolio2.jpg" alt="примеры работ">
-                    <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio1.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Постер New Orlean vs Golden Star</h2>
-                <p class="text-portfolio">Веб-сайт</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a href="" class="effects">
+                  <h2 class="text-title-portfolio">Технокряк</h2>
+                  <p class="text-portfolio">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects" href="">
                 <div class="depart">
-                    <img src="images/portfolio3.jpg" alt="примеры работ">
-                    <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
-                    </div>
-                <div class="border">
-                <h2 class="text-title-portfolio">Ресторан Seafood</h2>
-                <p class="text-portfolio">Веб-сайт</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a class="effects">
-                <div class="depart">
-            <img src="images/portfolio4.jpg" alt="примеры работ">
-            <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio2.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Проект Prime</h2>
-                <p class="text-portfolio">Маркетинг</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a class="effects">
+                  <h2 class="text-title-portfolio">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="text-portfolio">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a href="" class="work-examples__effects">
                 <div class="depart">
-            <img src="images/portfolio5.jpg" alt="примеры работ">
-            <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio3.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Маркетинг</h2>
-                <p class="text-portfolio">Приложение</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a class="effects">
+                  <h2 class="text-title-portfolio">Ресторан Seafood</h2>
+                  <p class="text-portfolio">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects">
                 <div class="depart">
-            <img src="images/portfolio6.jpg" alt="примеры работ">
-            <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio4.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Inspiration has no Borders</h2>
-                <p class="text-portfolio">Веб-сайт</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a class="effects">
+                  <h2 class="text-title-portfolio">Проект Prime</h2>
+                  <p class="text-portfolio">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects">
                 <div class="depart">
-            <img src="images/portfolio7.jpg" alt="примеры работ">
-            <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio5.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Издание Limited Edition</h2>
-                <p class="text-portfolio">Дизайн</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a class="effects">
+                  <h2 class="text-title-portfolio">Маркетинг</h2>
+                  <p class="text-portfolio">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects">
                 <div class="depart">
-            <img src="images/portfolio8.jpg" alt="примеры работ">
-            <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio6.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Проект LAB</h2>
-                <p class="text-portfolio">Маркетинг</p>
-            </div>
-            </a>
-        </li>
-        <li class="item">
-            <a class="effects">
+                  <h2 class="text-title-portfolio">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="text-portfolio">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects">
                 <div class="depart">
-            <img src="images/portfolio9.jpg" alt="примеры работ">
-            <p class="masters-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                позволит посетителю получить
-                исчерпывающие сведения о компании или частном лице.</p>
+                  <img src="images/portfolio7.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="border">
-                <h2 class="text-title-portfolio">Growing Business</h2>
-                <p class="text-portfolio">Приложение</p>
-            </div>
-            </a>
-        </li>
-    </ul>
-</div>
-</section>
-</main>
-
-
-<!--footer-->
-    <footer class="footer">
-        <div class="oll-foter">
-            <div class="footer__address">
-                <a class="footer__logo" href="">Web<span class="logo-half-footer">Studio</span></a>
-                <address class="address">
-                    <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="address-nav">
-                        <li><a class="address-link" href="mailto:info@example.com">info@example.com</a></li>
-                        <li><a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-    
-            <div class="container-foter">
-                <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                <ul class="company-networks">
-                    <li class="company-networks-list"><a class="company-networks-link" href="">
-                            <svg class="company-icon" width="20px" height="20px">
-                                <use href="./images/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a></li>
-                    <li class="company-networks-list"><a class="company-networks-link" href="">
-                            <svg class="company-icon" width="20px" height="20px">
-                                <use href="./images/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a></li>
-                    <li class="company-networks-list"><a class="company-networks-link" href="">
-                            <svg class="company-icon" width="20px" height="20px">
-                                <use href="./images/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a></li>
-                    <li class="company-networks-list"><a class="company-networks-link" href="">
-                            <svg class="company-icon" width="20px" height="20px">
-                                <use href="./images/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a></li>
-                </ul>
-            </div>
-
-            <div class="mailing mailing-list">
-                <h2 class="mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-                <div class="mailing__wrap">
-                    <label class="mailing__label">
-                        <textarea class="mailing__textarea" name="comment" placeholder="E-mail"></textarea>
-                    </label>
-                    <button class="mailing__button">Подписаться
-                        <svg class="mailing__button-icon" width="24px" height="24px">
-                            <use href="./images/symbol-defs.svg#send"></use>
-                        </svg></button>
-            
+                  <h2 class="text-title-portfolio">Издание Limited Edition</h2>
+                  <p class="text-portfolio">Дизайн</p>
                 </div>
-            </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects">
+                <div class="depart">
+                  <img src="images/portfolio8.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="border">
+                  <h2 class="text-title-portfolio">Проект LAB</h2>
+                  <p class="text-portfolio">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__effects">
+                <div class="depart">
+                  <img src="images/portfolio9.jpg" alt="примеры работ" />
+                  <p class="depart__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="border">
+                  <h2 class="text-title-portfolio">Growing Business</h2>
+                  <p class="text-portfolio">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="foter__oll">
+        <div class="footer__address">
+          <a class="footer__logo logo" href=""
+            >Web<span class="logo__light">Studio</span></a
+          >
+          <address class="address">
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address__nav">
+              <li>
+                <a class="address__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="address__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="join">
+          <h2 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="networks networks__footer">
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mailing mailing-list">
+          <h2 class="mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <div class="mailing__wrap">
+            <label class="mailing__label">
+              <textarea
+                class="mailing__textarea"
+                name="comment"
+                placeholder="E-mail"
+              ></textarea>
+            </label>
+            <button class="mailing__button">
+              Подписаться
+              <svg class="mailing__button-icon" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
