@@ -44,12 +44,22 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     background-color: transparent;
+    transition: border-color 250ms;
+    transition: fill 250ms;
+
+        &:hover,
+        &:focus {
+            border-color: #2196F3;
+            fill:#2196F3;
+            }
 }
 
 .close {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+
 }
 
 .modal__title {
@@ -144,12 +154,15 @@
     }
 }
 
+.wpapper {
+    margin-bottom: 15px;
+}
+
 .check-text {
     font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
 }
 
 .check-text span {
@@ -174,6 +187,11 @@
 
 .input-check:checked+.check-text span {
     background-color: var(--sekondary-color);
+    border: none;
+}
+
+.input-check:focus+.check-text span {
+    border-color: var(--sekondary-color);
     border: none;
 }
 
