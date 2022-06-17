@@ -4,13 +4,11 @@
 }
 
 .peculiarities {
-    //display: flex;
-    //margin: -15px;
-        @media screen and (min-widht: 768px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             margin: -30px;
             }
-                 @media screen and (min-widht: 1200px) {
+                 @media screen and (min-width: 1200px) {
                      display: flex;
                      margin: -15px;
                  }
@@ -19,14 +17,14 @@
 .peculiarities__item {
     //width: 270px;
     //margin: 15px;
-    margin-right: 15px;
-    @media screen and (min-widht: 768px) {
+    
+    @media screen and (min-width: 768px) {
             width: 354px;
             margin: 30px;
             display: flex;
             margin: -30px;
     }
-        @media screen and (min-widht: 1200px) {
+        @media screen and (min-width: 1200px) {
             width: 270px;
             margin: 15;
         }
@@ -54,7 +52,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    @media screen and (min-widht: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 1.14;
     }
