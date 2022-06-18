@@ -5,28 +5,28 @@
 
 .peculiarities {
         @media screen and (min-width: 768px) {
-            //display: flex;
-            margin: -30px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
             }
                  @media screen and (min-width: 1200px) {
-                     //display: flex;
+                     display: flex;
                      margin: -15px;
+                    flex-wrap: nowrap;
                  }
 }
 
 .peculiarities__item {
-    //width: 270px;
-    //margin: 15px;
     
     @media screen and (min-width: 768px) {
-            width: 354px;
-            margin: 30px;
-            //display: flex;
-            margin: -30px;
+            max-width: 354px;
+            margin: 15px;
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            
     }
         @media screen and (min-width: 1200px) {
-            width: 270px;
-            margin: 15;
+            max-width: 270px;
+            margin: 15px;
         }
 }
 
