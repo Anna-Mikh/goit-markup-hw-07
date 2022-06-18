@@ -296,6 +296,20 @@ a {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-label {
+    font-size: 12px;
+  }
+}
+
 .modal__button-close {
   position: absolute;
   right: 8px;
@@ -330,6 +344,13 @@ a {
   justify-content: center;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+    text-align: center;
+  }
 }
 
 .modal-field:not(:last-child) {
@@ -418,6 +439,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .check-text {
+    font-size: 12px;
+  }
 }
 
 .check-text span {
@@ -813,7 +840,6 @@ a {
 
 .address {
   font-style: normal;
-  width: 231px;
 }
 
 .address__text {
