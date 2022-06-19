@@ -1,0 +1,81 @@
+.mob-header__nav {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    position: relative;
+}
+
+.mob-svg {
+    width: 40px;
+    height: 40px;
+    &:hover,
+        &:focus {
+            fill: #2196F3;
+        }
+}
+
+.mob-header__button {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;   
+    }
+}
+
+.mob-header__button .icon-close {
+    display: none;
+}
+
+.mob-header__button.is-open .icon-close {
+    display: block;
+}
+
+.mob-header__button.is-open .icon-menu {
+    display: none;
+}
+
+.mob-menu-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 796px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.mob-navigation {
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+    }
+
+}
+
+.mob-contacts {
+    @media screen and (min-width: 768px) {
+        display: block;
+        flex-direction: column;
+    }
+}

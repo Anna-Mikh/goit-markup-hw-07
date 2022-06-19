@@ -1,6 +1,11 @@
 .contacts {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        flex-direction: column;
+    }
 }
 
 
@@ -9,6 +14,11 @@
     align-items: center;
     fill: var(--primery-text-color);
     vertical-align: baseline;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            flex-direction: column;
+        }
 }
 
 .contacts__item {
@@ -33,9 +43,22 @@
     &:hover, &:focus {
     color: var(--sekondary-color);
     }
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 0.85;
+        }
 }
 
 .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
