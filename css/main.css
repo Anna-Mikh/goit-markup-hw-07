@@ -812,22 +812,13 @@ a {
 }
 
 .foter__oll {
-  display: block;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .foter__oll {
-    display: flex;
-    align-items: baseline;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  display: flex;
+  align-items: baseline;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer__logo {
@@ -840,6 +831,7 @@ a {
 
 .address {
   font-style: normal;
+  width: 231px;
 }
 
 .address__text {

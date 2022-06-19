@@ -5,12 +5,6 @@
     }
 
 .foter__oll {
-    display: block;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
         width: 1200px;
@@ -18,7 +12,6 @@
         padding-right: 15px;
         margin-right: auto;
         margin-left: auto;  
-    }
 }
 
 .footer__logo {
@@ -31,7 +24,7 @@
 
 .address {
     font-style: normal;
-    //width: 231px;
+    width: 231px;
 }
 
 .address__text {
