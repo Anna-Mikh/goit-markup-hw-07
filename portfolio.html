@@ -18,25 +18,63 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body>
-    <!-- header -->
-    <!--<header class="header">
+
+     <!-- header -->
+     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a href="" class="logo logo__header"
+        <a href="" class="logo logo__header"
             >Web<span class="logo__dark">Studio</span></a
           >
+          <button
+            class="button-open"
+            type="button"
+            aria-expanded="false"
+            data-menu-open
+          >
+            <svg
+              class="mob-svg"
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
+              aria-controls="mob-menu-container"
+            >
+              <use
+  
+                href="./images/symbol-defs.svg#menu_40px"
+              ></use>
+            </svg>
+          </button>
+        <div class="mobile-menu">
+          <button
+            class="button-close"
+            type="button"
+            aria-expanded="false"
+            data-menu-close
+          >
+            <svg
+              class="mob-svg"
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
+              aria-controls="mob-menu-container"
+            >
+              <use
+                class="icon-close"
+                href="./images/symbol-defs.svg#close_40px"
+              ></use>
+            </svg>
+          </button>
+         <nav class="nav">
+          
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--current"
-                href="portfolio.html"
-                >Портфолио</a
+              <a class="site-nav__link" href="index.html"
+                >Студия</a
               >
+            </li>
+            <li class="site-nav__item site-nav__link--current">
+              <a class="site-nav__link" href="">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -60,9 +98,26 @@
               +38 096 111 11 11</a
             >
           </li>
+        </ul> 
+        <ul class="mobile__socials">
+        <li class="mobile__socials-item">
+          <a href="" class="mobile__socials-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </li>
+        <li class="mobile__socials-item">
+          <a href="" class="mobile__socials-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </li>
+        <li class="mobile__socials-item">
+          <a href="" class="mobile__socials-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </li>
+        <li class="mobile__socials-item">
+          <a href="" class="mobile__socials-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
         </ul>
+
+        </div>
       </div>
-    </header>-->
+    </header>   
+
 
     <!--Main-->
     <main class="main-portfolio">

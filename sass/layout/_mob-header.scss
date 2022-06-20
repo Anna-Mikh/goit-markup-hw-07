@@ -13,9 +13,16 @@
   &.is-open {
     transform: translateX(0);
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .button-open {
+  padding: 0;
+  border-color: transparent;
+  background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -25,7 +32,34 @@
   position: absolute;
   top: 15px;
   right: 15px;
+  border-color: transparent;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: var(--sekondary-color);
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.mobile__socials {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile__socials-item .mobile__socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  color: var(--sekondary-color);
 }
