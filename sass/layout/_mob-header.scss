@@ -1,5 +1,6 @@
 .mob-header__nav {
     display: flex;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -9,10 +10,19 @@
 .mob-svg {
     width: 40px;
     height: 40px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+
     &:hover,
         &:focus {
             fill: #2196F3;
         }
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 
 .mob-header__button {
@@ -43,7 +53,7 @@
 .mob-menu-container {
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding: 20px;
+
     text-align: center;
     font-size: 20px;
 
