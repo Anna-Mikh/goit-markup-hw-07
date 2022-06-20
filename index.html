@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Mob-header -->
-    <header class="mob-header">
+   <!-- <header class="mob-header">
       <div class="mob-header__container">
         <nav class="mob-header__nav">
           <a href="" class="logo logo__header"
@@ -89,15 +89,55 @@
           </div>
         </nav>
       </div>
-    </header>
+    </header>-->
 
     <!-- header -->
-    <!-- <header class="header">
+     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a href="" class="logo logo__header"
+        <a href="" class="logo logo__header"
             >Web<span class="logo__dark">Studio</span></a
           >
+          <button
+            class="button-open"
+            type="button"
+            aria-expanded="false"
+            data-menu-open
+          >
+            <svg
+              class="mob-svg"
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
+              aria-controls="mob-menu-container"
+            >
+              <use
+  
+                href="./images/symbol-defs.svg#menu_40px"
+              ></use>
+            </svg>
+          </button>
+        <div class="mobile-menu">
+          <button
+            class="button-close"
+            type="button"
+            aria-expanded="false"
+            data-menu-close
+          >
+            <svg
+              class="mob-svg"
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
+              aria-controls="mob-menu-container"
+            >
+              <use
+                class="icon-close"
+                href="./images/symbol-defs.svg#close_40px"
+              ></use>
+            </svg>
+          </button>
+         <nav class="nav">
+          
           <ul class="site-nav">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav__link--current" href=""
@@ -129,9 +169,10 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> 
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main class="main">
       <!-- Hero -->
@@ -466,7 +507,101 @@
 
     <!--footer-->
 
-    <!-- <footer class="footer">
+        <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__address">
+          <a class="footer__logo logo" href=""
+            >Web<span class="logo__light">Studio</span></a
+          >
+          <address class="address">
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address__nav">
+              <li>
+                <a class="address__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="address__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="join">
+          <h2 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="networks networks__footer">
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--footer-bg" href="">
+                <svg
+                  class="networks__icon networks__icon--footer-color"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mailing">
+          <h2 class="mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <form class="mailing__form">
+            <label class="mailing__label">
+              <input
+                class="mailing__input"
+                name="subscription"
+                placeholder="E-mail"
+                type="text"
+              ></input>
+            </label>
+            <button class="mailing__button">
+              Подписаться
+              <svg class="mailing__button-icon" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
       <div class="footer__oll">
         <div class="footer__address">
           <a class="footer__logo logo" href=""
