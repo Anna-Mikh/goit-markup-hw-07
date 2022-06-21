@@ -635,6 +635,14 @@ a {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 54, 0.4)), url("../images/hero-bg-2x-d");
+  }
+}
+
+/* Перевизначаємо шлях до 2x зображення,
+    якщо щільність екрану мінімум 2 */
 .hero__title {
   font-weight: 900;
   letter-spacing: 0.06em;
